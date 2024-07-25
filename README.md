@@ -24,4 +24,4 @@ La base de datos incluye:
 
 ## Diagrama Entidad Relación
 
-
+![alt text](/Imagenes/modelorelacional.jpg)
