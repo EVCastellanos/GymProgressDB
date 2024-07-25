@@ -39,3 +39,12 @@ La base de datos está compuesta por las siguientes tablas:
 | ID_OBJETIVO     | INT(5)         | Identificador único del objetivo |
 | NOMBRE_OBJETIVO| VARCHAR(100) | Nombre del objetivo            |
 | DESCRIPCION_OBJETIVO| VARCHAR(100) | Descripcion del objetivo            |
+
+
+
+
+## Ejemplos de Consultas
+
+
+### Resultado:
+
