@@ -52,6 +52,32 @@ La base de datos está compuesta por las siguientes tablas:
 | FECHACREACION_EPS| DATE | Fecha en que se creó la EPS        |
 | ESTADO_EPS| VARCHAR(50) | estado actual de la EPS, que puede ser "activo", "inactivo", "suspendido"         |
 
+### Tabla: `USUARIOS`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN                        |
+| ------ | ------------ | ------------------------------------ |
+| ID_USER |	INT(9)	| identificador unico del usuario |
+| DOCUMENTO_USER |	INT(20) |	Documento de identificacion del usuario |
+| NOMBRE_USER |	VARCHAR(100) |	nombre completo del usuario | 
+| FECHA_NACIMIENTO_USER |	DATE |	Fecha de nacimiento del usuario |
+| EMAIL_USER |	VARCHAR(100) |	correo electronico del usuario |
+| TELEFONO_USER |	VARCHAR(15) |	Numero de telefono del usuario |
+| DIRECCION_USER |	VARCHAR(200) |	direccion del usuario |
+| FECHAINGRESO_USER |	DATE |	fecha de ingreso al gimnasio del usuario |
+| ID_EPS |	INT(2) |	identificador unico de la eps a la que pertenece el usuario |
+| PESO_USER |	DECIMAL(3,0) |	peso con el que ingresa el usuario al gimnasio |
+| ID_OBJETIVO |	INT(5) |	identificador unico del objetivo personal de los usuarios para ingresar al gimnasio |
+
+### Tabla: `PLANES`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN                        |
+| ------ | ------------ | ------------------------------------ |
+| ID_PLAN |	INT(3) |	Identificador unico del plan |
+| NOMBRE_PLAN |	VARCHAR(100) |	nombre del plan |
+| DESCRIPCION_PLAN |	TINYTEXT |	descripcion de plan |
+| DURACIONSEMANA_PLAN |	INT(3) |	duracion en semanas del plan |
+| COSTO_PLAN |	DECIMAL(10,0) |	costo del plan |
+
 
 ## Ejemplos de Consultas
 
