@@ -78,6 +78,55 @@ La base de datos está compuesta por las siguientes tablas:
 | DURACIONSEMANA_PLAN |	INT(3) |	duracion en semanas del plan |
 | COSTO_PLAN |	DECIMAL(10,0) |	costo del plan |
 
+### Tabla: `ENTRENADOR`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN |
+| ------ | ------------ | ------------------------------------ |
+| ID_ENTRENADOR |	INT(3) |	identificador unico del entrenador |
+| NOMBRE_ENTRENADOR |	VARCHAR(100) |	Nombre completo del entrenador |
+| EMAIL_ENTRENADOR |	VARCHAR(100) |	correo electronico del entrenador |
+| TELEFONO_ENTRENADOR |	VARCHAR(15) |	Numero de telefono del entrenador |
+| ESPECIALIDAD_ENTRENADOR |	VACHAR(100) |	Especialidad del entrenador |
+| ID_EPS |	INT(2) |	identificador unico de la eps |
+
+### Tabla: `DIA SEMANA`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
+| ------ | ------------ | ------------------------------------ |
+| ID_DIA |	INT(1) |	Número único que identifica a cada día de la semana |
+| NOMBRE_DIA |	VARCHAR(100) |	Nombre del día de la semana |
+
+
+### Tabla: `RUTINAS`
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
+| ------ | ------------ | ------------------------------------ |
+| ID_RUTINA |	INT(3) |	Identificador unico de la rutina |
+| NOMBRE_RUTINA |	VARCHAR(100) |	nombre de la rutina |
+| DESCRIPCION_RUTINA |	VARCHAR(200) |	descripcion de la rutina |
+| ID_DIA |	INT(1) |	identificador unico del dia |
+| ID_PLAN |	INT(3) |	identificador unico del plan |
+
+### Tabla: `PROGRESO`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
+| ------ | ------------ | ------------------------------------ |
+| ID_PROGRESO |	INT(4) |	Identificador unico del progreso |
+| FECHA_PROGRESO |	DATE |	fecha en la que se realiza la evaluacion de progreso del usuario |
+| PESO_PROGRESO |	DECIMAL(10.0) |	peso segun la fecha de progreso |
+| MEDIDAS_PROGRESO |	DECIMAL(10.0) |	medidas del usuario al momento de la evaluacion, cintura, cadera, busto, pierna, brazo, cuello |
+| IMC_PROGRESO |	DECIMAL(10.0) |	Indice de masa corporal al momento de la evaluacion |
+| ID_USER |	INT(9) |	Identificador unico del usuario |
+| ID_RUTINA |	INT(3) |	identificador unico de la rutina |
+
+### Tabla: `ASIGNACIONES`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
+| ------ | ------------ | ------------------------------------ |
+|ID_ASIGNACION|	INT(3)	|Identificador unico de la asignacion|
+|FECHAINICIO_ASIGNACION	|DATE	|fecha de inicio del plan|
+|FECHAFIN_ASIGNACION|	DATE	|fecha final del plan|
+|ID_USER|	INT(9)	|identificador unico del usuario|
+|ID_PLAN|	INT(3)	|identificador unico del plan|
 
 ## Ejemplos de Consultas
 
