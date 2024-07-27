@@ -40,7 +40,17 @@ La base de datos está compuesta por las siguientes tablas:
 | NOMBRE_OBJETIVO| VARCHAR(100) | Nombre del objetivo            |
 | DESCRIPCION_OBJETIVO| VARCHAR(100) | Descripcion del objetivo            |
 
+### Tabla: `EPS`
 
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN                        |
+| ------ | ------------ | ------------------------------------ |
+| ID_EPS     | INT(2)         | Identificador único de la EPS |
+| NOMBRE_EPS| VARCHAR(100) | Nombre oficial de la EPS            |
+| DIRECCION_EPS| VARCHAR(100) | Dirección física de la sede principal de la EPS         |
+| TELEFONO_EPS| VARCHAR(15) | Número de teléfono de contacto de la EPS         |
+| EMAIL_EPS| VARCHAR(100) | Correo electrónico de contacto de la EPS         |
+| FECHACREACION_EPS| DATE | Fecha en que se creó la EPS        |
+| ESTADO_EPS| VARCHAR(50) | estado actual de la EPS, que puede ser "activo", "inactivo", "suspendido"         |
 
 
 ## Ejemplos de Consultas
