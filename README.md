@@ -89,13 +89,6 @@ La base de datos está compuesta por las siguientes tablas:
 | ESPECIALIDAD_ENTRENADOR |	VACHAR(100) |	Especialidad del entrenador |
 | ID_EPS |	INT(2) |	identificador unico de la eps |
 
-### Tabla: `DIA SEMANA`
-
-| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
-| ------ | ------------ | ------------------------------------ |
-| ID_DIA |	INT(1) |	Número único que identifica a cada día de la semana |
-| NOMBRE_DIA |	VARCHAR(100) |	Nombre del día de la semana |
-
 
 ### Tabla: `RUTINAS`
 | NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
@@ -103,7 +96,7 @@ La base de datos está compuesta por las siguientes tablas:
 | ID_RUTINA |	INT(3) |	Identificador unico de la rutina |
 | NOMBRE_RUTINA |	VARCHAR(100) |	nombre de la rutina |
 | DESCRIPCION_RUTINA |	VARCHAR(200) |	descripcion de la rutina |
-| ID_DIA |	INT(1) |	identificador unico del dia |
+| DIA_SEMANA |	INT(1) |	identificador unico del dia |
 | ID_PLAN |	INT(3) |	identificador unico del plan |
 
 ### Tabla: `PROGRESO`
