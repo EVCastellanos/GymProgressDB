@@ -17,12 +17,11 @@ La base de datos incluye:
 - **OBJETIVOS_PERSONALES**: lista de los objetivos por los que los usuarios van al gimnasio.
 - **PLANES**: Planes de entrenamiento disponibles en el gimnasio.
 - **USUARIOS**: Información basica de los usuarios del gimnasio.
-- **RUTINA**: Rutinas de ejercicios que forman parte de los planes de entrenamiento.
-- **PROGRESO**: Progreso de los usuarios que asisten al gimnasio.
-- **ENTRENADOR**: Información de los entrenadores del gimnasio.
+- **RUTINAS**: Rutinas de ejercicios que forman parte de los planes de entrenamiento.
+- **ENTRENADORES**: Información de los entrenadores del gimnasio.
 - **ASIGNACIONES**: Asignacion de planes de entrenamiento a los usuarios.
 - **EPS**: contiene información sobre las Entidades Prestadoras de Salud (EPS)
-- **DIAS_SEMANA**:contiene información sobre los días de la semana
+- **TOMA_MEDIDAS**:contiene los registros de las medidas fisicas de los usuarios al momento de registrar el progreso en el gimnasio
 
 ## Diagrama Entidad Relación
 
@@ -63,6 +62,8 @@ La base de datos está compuesta por las siguientes tablas:
 | EMAIL_USER |	VARCHAR(100) |	correo electronico del usuario |
 | TELEFONO_USER |	VARCHAR(15) |	Numero de telefono del usuario |
 | DIRECCION_USER |	VARCHAR(200) |	direccion del usuario |
+| GENERO_USER |	VARCHAR(50) |	Genero del usuario |
+| ALTURA_USER |	DECIMAL(10,0) |	Medida de la altura del usuario en metros |
 | FECHAINGRESO_USER |	DATE |	fecha de ingreso al gimnasio del usuario |
 | ID_EPS |	INT(2) |	identificador unico de la eps a la que pertenece el usuario |
 | PESO_USER |	DECIMAL(3,0) |	peso con el que ingresa el usuario al gimnasio |
@@ -78,7 +79,7 @@ La base de datos está compuesta por las siguientes tablas:
 | DURACIONSEMANA_PLAN |	INT(3) |	duracion en semanas del plan |
 | COSTO_PLAN |	DECIMAL(10,0) |	costo del plan |
 
-### Tabla: `ENTRENADOR`
+### Tabla: `ENTRENADORES`
 
 | NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN |
 | ------ | ------------ | ------------------------------------ |
@@ -99,17 +100,6 @@ La base de datos está compuesta por las siguientes tablas:
 | DIA_SEMANA |	INT(1) |	identificador unico del dia |
 | ID_PLAN |	INT(3) |	identificador unico del plan |
 
-### Tabla: `PROGRESO`
-
-| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
-| ------ | ------------ | ------------------------------------ |
-| ID_PROGRESO |	INT(4) |	Identificador unico del progreso |
-| FECHA_PROGRESO |	DATE |	fecha en la que se realiza la evaluacion de progreso del usuario |
-| PESO_PROGRESO |	DECIMAL(10.0) |	peso segun la fecha de progreso |
-| MEDIDAS_PROGRESO |	DECIMAL(10.0) |	medidas del usuario al momento de la evaluacion, cintura, cadera, busto, pierna, brazo, cuello |
-| IMC_PROGRESO |	DECIMAL(10.0) |	Indice de masa corporal al momento de la evaluacion |
-| ID_USER |	INT(9) |	Identificador unico del usuario |
-| ID_RUTINA |	INT(3) |	identificador unico de la rutina |
 
 ### Tabla: `ASIGNACIONES`
 
@@ -120,6 +110,25 @@ La base de datos está compuesta por las siguientes tablas:
 |FECHAFIN_ASIGNACION|	DATE	|fecha final del plan|
 |ID_USER|	INT(9)	|identificador unico del usuario|
 |ID_PLAN|	INT(3)	|identificador unico del plan|
+
+
+### Tabla: `TOMA_MEDIDAS`
+
+| NOMBRE DEL CAMPO  | TIPO DE DATO       | DESCRIPCIÓN  |
+| ------ | ------------ | ------------------------------------ |
+|ID_MEDIDA|	INT(2)	|Identificador unico de las medidas|
+|GRASA_CORPORAL	|DECIMAL(10,0)	|Valor del porcentaje de grasa corportal|
+|MASA_MUSCULAR|	DECIMAL(10,0)	|Valor del porcentaje de masa muscular|
+|CIRCUNFERENCIA_CINTURA|	DECIMAL(10,0)	|Medicion de la cintura|
+|CIRCUNFERENCIA_CADERA|	DECIMAL(10,0)	|Medicion de la cadera|
+|CIRCUNFERENCIA_BRAZO|	DECIMAL(10,0)	|Medicion del brazo|
+|CIRCUNFERENCIA_MUSLO|	DECIMAL(10,0)	|Medicion del muslo|
+|OBSERVACIONES_MEDIDA|	VARCHAR(500)	|Observaciones sobre las medidas|
+|FECHA_MEDIDA|	DATE	|Fecha en la que se realiza la toma de medadidas|
+|PESO|	DECIMAL(10,0)	|Peso del usuario en el momento de la toma de medida|
+|IMC|	DECIMAL(10,0)	|Indice de masa corportal del usuario al momento de la toma de medida|
+|ID_RUTINA|	INT(3)	|Identificador unico del progreso|
+|ID_USER|	INT(9)	|Identificador unico del usuario|
 
 ## Ejemplos de Consultas
 
