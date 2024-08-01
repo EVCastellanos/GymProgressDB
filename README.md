@@ -3,7 +3,7 @@
 ## Base de datos Progreso Gimnasio MySql
 
 <hr>
-    <img src="https://ingeurbanismo.com/wp-content/uploads/2023/09/Gimnasio.png" alt="GYMPRGRESS" width="250px">
+    <img src="https://www.gimnasiosbarcelona.org/wp-content/uploads/2018/08/centros_crossfit_barcelona.jpg" alt="GYMPRGRESS" width="650px">
 <hr>
 
 ## Descripción
