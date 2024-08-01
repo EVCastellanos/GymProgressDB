@@ -130,8 +130,3 @@ La base de datos está compuesta por las siguientes tablas:
 |ID_RUTINA|	INT(3)	|Identificador unico del progreso|
 |ID_USER|	INT(9)	|Identificador unico del usuario|
 
-## Ejemplos de Consultas
-
-
-### Resultado:
-
