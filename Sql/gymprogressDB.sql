@@ -1,8 +1,8 @@
--- --------------------------------------------------------
-Hecho por: Edith Viviana Castellanos
-Evidencias del aprendizaje 
-Julio 2024
--- --------------------------------------------------------
+----------------------------------------------------------
+--Hecho por: Edith Viviana Castellanos
+--Evidencias del aprendizaje 
+--Julio 2024
+----------------------------------------------------------
 
 
 CREATE TABLE IF NOT EXISTS `ASIGNACIONES` (
