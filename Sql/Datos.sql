@@ -1,10 +1,10 @@
--- --------------------------------------------------------
-Datos de prueba 
-Base de datos GymProgress
-Version 1.0
-Material de aprendizaje Mysql
-Julio 2024
--- --------------------------------------------------------
+---------------------------------------------------------
+--Datos de prueba 
+--Base de datos GymProgress
+--Version 1.0
+--Material de aprendizaje Mysql
+--Julio 2024
+---------------------------------------------------------
 
 INSERT INTO `ASIGNACIONES` (`ID_ASIGNACION`, `FECHAINICIO_ASIGNACION`, `FECHAFIN_ASIGNACION`, `ID_USER`, `ID_PLAN`, `ID_ENTRENADOR`) VALUES
 	(001, '2023-07-01', '2023-07-29', 000000001, 001, 001),
